@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
             <AnimatePresence mode='wait'>
                 <motion.div key={true} className='h-full'>
                     <Transition />
-                    <div>{children}</div>
+                    <div className='w-full h-full'>{children}</div>
                 </motion.div>
             </AnimatePresence>
         </>
