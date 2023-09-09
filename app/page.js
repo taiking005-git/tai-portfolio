@@ -22,9 +22,9 @@ const page = () => {
             className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
             loren This sis soso a soas
           </motion.p>
-          <div className="flex justify-center xl:hidden relative">
+          <motion.div variants={fadeIn('down', 0.4)} initial='hidden' animate='show' className="flex justify-center xl:hidden relative">
             <ProjectBtn />
-          </div>
+          </motion.div>
           <motion.div variants={fadeIn('down', 0.4)} initial='hidden' animate='show' className="hidden xl:flex">
             <ProjectBtn />
           </motion.div>
